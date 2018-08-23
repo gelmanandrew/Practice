@@ -4,7 +4,8 @@ public class HashMapPractice {
 
 	public static void main(String[] args) {
 
-		//Some Olympic sports 
+		//Some Olympic sports
+		System.out.println("testing");
 
 		ArrayList<String> olympicSports = new ArrayList<String>();
 		olympicSports.add("Archery");
@@ -27,7 +28,7 @@ public class HashMapPractice {
 		hostCities.put("Rio de Janeiro", 2016);
 
 		for (String city: hostCities.keySet()) {
-			
+
 			if (hostCities.get(city) < 2016) {
 
 				System.out.println(city + " hosted the summer Olympics in " + hostCities.get(city) + ".");
