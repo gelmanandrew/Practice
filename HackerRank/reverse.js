@@ -1,4 +1,4 @@
-// Interview Preparation Kit -> Linked Lists -> Reverse a doubly linked list
+// Interview Preparation Kit -> Linked Lists -> Reverse a doubly
 function reverse(head) {
     var temp = null;
     var current = head;
