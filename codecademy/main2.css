@@ -1,0 +1,106 @@
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
+  background-position: center top;
+  background-size: cover;
+  margin: 0;
+}
+
+a {
+  color: #204156;
+  text-decoration: none;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: 100;
+}
+
+.page-description {
+  border: 1px solid #000;
+  margin: 2px;
+  text-align: center;
+  padding: 30px;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 20px;
+}
+
+.gallery-item .thumbnail {
+  border: 5px solid #fff;
+}
+
+/* FOOTER NAVIGATION */
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  display: inline;
+  margin: 0;
+  padding: 0 10px;
+}
+
+nav ul {
+  display: inline;
+}
+
+.contact-btn {
+  float: right;
+}
+
+.contact-btn a {
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 8px 18px;
+  border: 1px solid #204156;
+	position: relative;
+}
+
+.contact-btn a:active {
+	top: 2px;
+}
+
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #204156;
+  text-decoration: none;
+}
+
+/*
+CSS Box Model: illustrates the space and boundary properties of an HTML element that can be controlled using CSS.
+
+border: sets the outline of an HTML page element, like a picture frame that contains the element.
+
+padding: sets the amount of space between an element's content and its border.
+
+margin: sets the amount of space between an HTML element and the next nearest element(s).
+
+display: property that determines how the selected element will be arranged in relation to other HTML elements on the page.
+
+inline: display value used to arrange HTML elements on the same line as neighboring elements.
+
+flex: display value that allows us to easily align multiple page elements vertically or horizontally.
+
+float: property used to float HTML elements left or right of neighboring elements.
+
+position: property used to position HTML elements in exact locations on a webpage.
+*/
