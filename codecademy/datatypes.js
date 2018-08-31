@@ -26,7 +26,17 @@ console.log(Math.ceil(43.8));
 console.log(Number.isInteger(2017));
 
 let changeMe = true;
+const myName = 'Drew';
+var age = 22;
 console.log(changeMe);
 changeMe = false;
 console.log(changeMe);
-// let can be changed, var stays the same
+// let can be changed, const can't be change it's constant, var is pre-ES6 JS
+
+let myName = 'Andrew';
+let myCity = 'LG Baby';
+console.log(`My name is ${myName}. My favorite city is ${myCity}.`);
+// uses ` backticks next to 1, not '' next to return
+
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable); // outputs string, aka the data type of it
