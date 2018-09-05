@@ -70,8 +70,38 @@ const itemTracker = ['item 0', 'item 1', 'item 2'];
 itemTracker.push('item 3', 'item 4');
 console.log(itemTracker);     // Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
 
+//example of using .push()
+let bobsFollowers = ['John', 'Johnny', 'Jack', 'Jacky'];
+let tinasFollowers = ['John', 'Jack', 'Stove'];
+let mutualFollowers = [];
+
+for(let i = 0; i < bobsFollowers.length; i++){
+  for(let j = 0; j < tinasFollowers.length; j++){
+    if(bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+}
+
 // .pop() - removes the last item of an array
 const newItemTracker = ['item 0', 'item 1', 'item 2'];
 const removed = newItemTracker.pop();
 console.log(newItemTracker);  // Output: [ 'item 0', 'item 1' ]
 console.log(removed);         // Output: item 2
+
+// .shift() - removes the first item from the Array
+// .unshift('word') - adds what's in the parameter to the beginning of the array
+// .slice() - returns a shallow copy of a portion of an array into a new array
+// .indexOf() - finds the index of the element in your paramter
+//    selected from beginning to end (end not included)
+console.log(groceryList.slice(1, 4)); //not mutating
+console.log(groceryList); //unchanged
+
+
+// just a while loop demonstration
+const cards = ['diamond', 'spade', 'heart', 'club'];
+let currentCard;
+while(currentCard !== 'spade'){
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+}
