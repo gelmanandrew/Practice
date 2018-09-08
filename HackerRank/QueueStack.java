@@ -52,7 +52,8 @@ public class QueueStack {
         return queue.remove();
     }
 
-// all below was provided
+
+// all below was provided  -----------------------------------------------------
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
